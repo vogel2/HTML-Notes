@@ -1,0 +1,18 @@
+p { color: rgb(41, 182, 76); }
+.bio { color:rgb(0, 37, 92) }
+.narrow { width: 30% }
+.fancyspacing {
+  border: 2px solid black;
+  margin: 1em;
+  padding: 0.5em;
+}
+.floatleft {
+  float: left;
+}
+.floatright {
+  float: right;
+}
+.smallcaps {
+  font-variant-caps: all-small-caps;
+}
+body { font-family:Arial, Helvetica, sans-serif; }
