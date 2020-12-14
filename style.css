@@ -1,3 +1,6 @@
+body {
+  color:rgb(214, 231, 255)
+}
 p { color: rgb(41, 182, 76); }
 .bio { color:rgb(0, 37, 92) }
 .narrow { width: 30% }
