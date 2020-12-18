@@ -4,7 +4,7 @@ body {
 }
 p { color: rgb(41, 182, 76); }
 .bio { color:rgb(0, 37, 92) }
-.narrow { width: 30% }
+
 
 
 .smallcaps {
@@ -13,8 +13,9 @@ p { color: rgb(41, 182, 76); }
 body { font-family: Courier, Helvetica, monospace; }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: 550px 300px 300px;
   border: 2px;
   margin: 0em;
   padding: 0.5em;
@@ -30,8 +31,7 @@ body { font-family: Courier, Helvetica, monospace; }
   width: 500px;
 }
 
-#box1 {
-  background-color: rgb(163, 226, 255);
+#box {
   width: 125px;
   height: 125px;
   text-align: center;
@@ -40,26 +40,7 @@ body { font-family: Courier, Helvetica, monospace; }
   order: 2;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-}
-#box2 {
-  background-color: rgb(149, 180, 248);
-  width: 125px;
-  height: 125px;
-  text-align: center;
-  border: 3px solid rgb(0, 37, 92);
-  margin: 0.1em;
-  order: 1;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-}
-#box3 {
-  background-color: rgb(154, 164, 255);
-  width: 125px;
-  height: 125px;
-  text-align: center;
-  border: 3px solid rgb(0, 37, 92);
-  margin: 0.1em;
-  order: 2;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
