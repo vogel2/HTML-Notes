@@ -14,12 +14,41 @@ body { font-family: Courier, Helvetica, monospace; }
 
 .container {
   display: grid;
-  grid-gap: 25px;
-  grid-template-columns: 550px 300px 300px;
+  grid-gap: 0px;
+  grid-template-columns: 100px 250px;
+  grid-template-rows: 100px 50px 200px;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas: 
+  "hd hd hd hd hd hd"
+  "co co co co li li"
+  "co2 co2 co2 co2 li li"
+  "ft ft ft ft ft ft";
   border: 2px;
   margin: 0em;
   padding: 0.5em;
 }
+
+#header {
+  grid-area: hd;
+}
+
+#main {
+  grid-area: co;
+}
+
+#main2 {
+  grid-area: co2;
+}
+
+#list {
+  grid-area: li;
+}
+
+
+#footer {
+  grid-area: ft;
+}
+
 
 #boxcontainer {
   display: flex;
